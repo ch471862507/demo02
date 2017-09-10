@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>猜你喜欢</title>
+		<style>
+			*{
+		     padding: 0;
+		     margin: 0;
+			}
+			a{
+				text-decoration: none;
+			}
+			.ul1{
+				width: 1000px;
+				margin: 0 auto;
+			}
+			.ul1 li{
+				display: inline-block;
+				width: 200px;
+				height: 260px;
+				overflow: hidden;
+				float: left;
+				margin-top: 28px;
+				margin-left: 8px;
+				background-color: #f5f5f5;
+			}
+			.item-t1{
+				color: gray;
+				font-size: 10px;
+				height: 28px;
+				overflow: hidden;			
+			}
+			.img{
+				width: 200px;
+				height: 190px;	
+				display: inline-block;	
+				overflow: hidden;	
+			}
+			.img img{
+				width: 200px;
+				height: 190px;
+			}
+			.ul1 li p{
+			height:30px ;
+			line-height: 30px;
+			vertical-align: middle;
+			}
+			.item-price{
+				float: left;
+				color: red;
+				font-size: 12px;
+			}
+			.item-sales{
+				float: right;
+				color: darkgray;
+				font-size: 10px;
+			}
+			.item-more{
+				display:none;
+				height: 68px;
+				width: 200px;
+				border: 1px solid red;
+				position: relative;
+				top:-64px;
+				color: white;
+				text-align: center;
+				font-size: 14px;
+				background: #e06718 url(//img.alicdn.com/tfs/TB1GYtrKpXXXXaVXXXXXXXXXXXX-221-82.png) 1px 0 no-repeat;
+			}
+			li:hover .item-more{
+				display: inline-block;
+			}
+			li:hover img{
+				border: 1px solid red;
+				border-bottom: 0;
+			}
+			#youlove{
+				width: 1000px;
+				text-align:center;	
+				margin-top:20px;
+				}
+				.title{
+					font-size: 14px;
+					font-weight: normal;
+				}
+			.tb-icon{
+				color: #dd4410;
+				font-size: 16px;
+			}
+			.desc{
+				width: 1000px;
+				text-align: center;
+				font-size: 10px;
+				color: gray;
+			}
+			#nav{
+				width:50px;
+				height:400px;
+				position: fixed;
+				top:20%;
+				right:200px
+			}
+			#nav li{
+				font-size: 14px;
+				display: block;
+				width: 40px;
+				height:40px ;
+				border: 1px solid gainsboro;
+				font-size: 12px;
+				text-align: center;
+			}
+			.usually{
+			 color: #fff;
+			 background-color: #f40;
+			}
+			.fashion{
+				color: #f05;
+				line-height: 40px;
+			}
+			.fashion:hover {
+				color: white;
+				background-color:#f40 ;			
+				}
+			.quality{
+				color:#8d7afb ;
+				line-height: 40px;
+			}
+			.quality:hover{
+				color: white;
+				background-color: #8d7afb;
+			}
+			.features{
+				color: #a8c001;
+				line-height: 40px;
+			}
+			.features:hover{
+				color: white;
+				background-color: #a8c001;
+			}
+			.affordable{
+				line-height: 40px;
+				color: #a2745b;
+			}
+			.affordable:hover{
+				background-color: #a2745b;
+				color: white;
+			}
+			.like{
+				color: #f40;
+			}
+			.like:hover{
+				background-color: #f40;
+				color: white;
+			}
+			.totop{
+				line-height: 40px;
+				color: #3c3c3c;
+			}
+			.totop:hover{
+				background-color: #f40 ;
+				color: white;
+			}
+			.feedbook{
+				line-height: 40px;
+				color: #3c3c3c;
+				border-bottom: 1px solid gainsboro;
+			}
+			.feedbook:hover{
+				background-color: #f40 ;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="totle">
+			<div id="youlove" >
+				<h3 class="title">
+					<i class="tb-icon"> </i>
+					猜你喜欢
+				</h3>
+			</div>
+			<div class="desc" >实时推荐最适合你的宝贝</div>
+			<ul class="ul1">
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i3/37460273/TB28612vstnpuFjSZFvXXbcTpXa_!!37460273.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						包邮古风头饰发簪子绢花发钗发夹流苏步摇古装汉服cos发饰配饰
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	17.91
+				    </span>
+					<span class="item-sales" >销量:82</span>
+					</p>
+					<a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/2690232695/TB2pybWXNLA11Bjy0FeXXbmzFXa_!!2690232695.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						中国风复古男装中式长衫汉服男大码休闲长袍外套亚麻长袖青年唐装
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	138
+				    </span>
+					<span class="item-sales" >销量:417</span>
+					</p>
+					<a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i1/2776335350/TB19f21eC3PL1JjSZFxXXcBBVXa_!!0-item_pic.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						【满58减5元】正版包邮现货 张爱玲传 失望是一种幸福 历史名人传记自传书籍 倾城才女系列 张爱玲散文小说全集 畅销小说书籍
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	18
+				    </span>
+					<span class="item-sales" >销量:44</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/1941906080198430343/TB2qwgSvHXlpuFjy1zbXXb_qpXa_!!0-saturn_solar.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						踏步机家用静音多功能液压瘦腿健身脚踏机
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	259
+				    </span>
+					<span class="item-sales" >销量:230</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i3/TB1Eh4eRVXXXXbUXpXXXXXXXXXX_!!0-item_pic.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						正版 全能网页设计师精炼手册 提升细节的法宝 实际案例的结合 具有全面应对各类风格和技法 专业学生教材 网页设计师完全手册 YS
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	39
+				    </span>
+					<span class="item-sales" >销量:37</span>
+					</p>
+				    <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i2/1120957850/TB1BOzxXOAKL1JjSZFoXXagCFXa_!!0-item_pic.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						1007页精装厚白话史记 通俗易懂 史记青少年版 中国通史 中华上下五千年 二十四史资治通鉴中国历史书籍
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	19.5
+				    </span>
+					<span class="item-sales" >销量:2244</span>
+					</p>
+				    <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/381250669/TB2If28dbOJ.eBjy1XaXXbNupXa_!!381250669.jpg_250x250.jpg" />
+					</span>	</a>
+					<h3 class="item-t1">
+						浣溪沙 豆蔻 原创古风汉服发带渐变流苏挂坠古装飘带头饰满包邮
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	37.75
+				    </span>
+					<span class="item-sales" >销量:56</span>
+					</p>
+			        <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+					<img src="//img.alicdn.com/bao/uploaded/i3/124896744/TB2xD9mbXgkyKJjSspoXXcOPpXa_!!124896744.jpg_250x250.jpg" />	
+					</span></a>
+					<h3 class="item-t1">
+						汉尚华莲原创汉服女装配饰日常百搭印花发带古风发饰夏季15色
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	29
+				    </span>
+					<span class="item-sales" >销量:286</span>
+					</p>
+				    <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/3208512670/TB2IV1IjtBopuFjSZPcXXc9EpXa_!!3208512670.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						包邮 古风古装汉服配饰飘带发夹边夹流苏Lolita发饰头饰
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	18.8
+				    </span>
+					<span class="item-sales" >销量:656</span>
+					</p>
+				    <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/54882540/TB2LczFtHJkpuFjy1zcXXa5FFXa_!!54882540.jpg_250x250.jpg" />
+					</span>	</a>
+					<h3 class="item-t1">
+						重回汉唐灵鹫原创设计绣花汉服男日常百搭居家交领半臂单上衣春夏
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	158
+				    </span>
+					<span class="item-sales" >销量:215</span>
+					</p>
+			        <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+					<img src="//img.alicdn.com/bao/uploaded/i3/27553679/TB2Qk2jdEsIL1JjSZPiXXXKmpXa_!!0-saturn_solar.jpg_250x250.jpg" />	
+					</span></a>
+					<h3 class="item-t1">
+						刻意练习:如何从新手到大师 高效学习
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	23.4
+				    </span>
+					<span class="item-sales" >销量:5</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i1/37460273/TB2iV9poxtmpuFjSZFqXXbHFpXa_!!37460273.jpg_250x250.jpg" />
+					</span>	</a>
+					<h3 class="item-t1">
+						包邮古装头饰复古发簪古风簪子古典饰品古代步摇流苏汉服cos发饰
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	17.91
+				    </span>
+					<span class="item-sales" >销量:186</span>
+					</p>
+			        <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i2/260373858/TB2SCv.cTIlyKJjSZFrXXXn2VXa_!!260373858.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						手工古风头饰边夹天然珍珠白贝蝴蝶流苏发夹汉服发饰配饰【逐蝶】
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	43
+				    </span>
+					<span class="item-sales" >销量:84</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i4/72703727/TB2kuL9X6zB11BjSspaXXcJ0VXa_!!72703727.jpg_250x250.jpg" />
+					</span>	</a>
+					<h3 class="item-t1">
+						古装头饰流苏发带飘带丝带发带汉服带古风饰品发夹头绳发夹流苏
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	18
+				    </span>
+					<span class="item-sales" >销量:91</span>
+					</p>
+			        <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i3/822896957/TB2gSZ2aTcCL1FjSZFPXXXZgpXa_!!822896957.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						鱼棠-易初-汉服配饰 贝壳花蝴蝶发夹 古风头饰软妹小清新边夹
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	39
+				    </span>
+					<span class="item-sales" >销量:45</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+				<li>
+				<a class="item" href="#">
+					<span class="img" >
+						<img src="//img.alicdn.com/bao/uploaded/i3/31856861/TB2AKYWabsTMeJjy1zeXXcOCVXa_!!0-saturn_solar.jpg_250x250.jpg" />
+					</span></a>
+					<h3 class="item-t1">
+						个性头发皮筋发绳头饰发圈丝带飘带发饰发带
+					</h3>
+					<p class="item-info" >
+				    <span class="item-price" >
+				    	<em>¥</em>
+				    	23.6
+				    </span>
+					<span class="item-sales" >销量:7403</span>
+					</p>
+				     <a class="item-more" href="#">
+						<p>找相似</p>
+						<p>发现更多宝贝</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div id="nav">
+			<ul>
+				<a href="#"><li class="usually" >我常<br/>逛的</li></a>
+				<a href="#"><li class="fashion" >时尚</li></a>
+				<a href="#"><li class="quality" >品质</li></a>
+				<a href="#"><li class="features" >特色</li></a>
+				<a href="#"><li class="affordable" >实惠</li></a>
+				<a href="#"><li class="like">猜你<br/>喜欢</li></a>
+				<a href="#"><li class="totop" >顶部</li></a>
+				<a href="#"><li class="feedbook" >反馈</li></a>
+			</ul>
+		</div>
+	</body>
+</html>
